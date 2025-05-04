@@ -1,13 +1,12 @@
 import './assets/tailwind.css'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
+import '@fontsource/poppins'
 
-const app = createApp(App)
+const pinia = createPinia()
 
-app.use(createPinia())
-app.use(router)
-
-app.mount('#app')
+createApp(App).use(router).use(pinia).mount('#app')
