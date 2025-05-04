@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import NotFound from '@/components/partials/NotFound.vue'
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
@@ -17,6 +18,10 @@ const router = createRouter({
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue'),
     },
+    {
+      path: '/:pathMatch(.*)*',
+      component: NotFound,
+    }
   ],
 })
 

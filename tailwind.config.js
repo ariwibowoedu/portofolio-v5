@@ -10,10 +10,8 @@ export default {
         sans: ['Poppins', 'sans-serif'],
       },
       colors: {
-        primary: {
-          primary: '#ff6600',
-          blueberry: '#604cc3',
-        }
+        primary: '#ff6600',
+        blueberry: '#604cc3',
       }
     },
   },
