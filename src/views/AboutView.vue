@@ -16,7 +16,7 @@
         web profile compnay for Fit Place Gym centre.
       </p>
       <p class="text-lg text-gray-700 mb-6">
-        Some of the skills i've intermediate include:
+        Some of the skill i've intermediate include:
         <ul class="list-disc list-inside space-y-2 text-gray-700 mb-6">
           <li>HTML, CSS, JavaScript</li>
           <li>Vue.js / Laravel</li>
