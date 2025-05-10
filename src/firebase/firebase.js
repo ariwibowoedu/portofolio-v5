@@ -1,17 +1,17 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getFirestore } from 'firebase/firestore';
+import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCiDHXIB4nMWDhW45gGZy1kQLGb8H2ENcU",
-    authDomain: "business-ari.firebaseapp.com",
-    projectId: "business-ari",
-    storageBucket: "business-ari.firebasestorage.app",
-    messagingSenderId: "397646660925",
-    appId: "1:397646660925:web:1cbbbcc695522db8da3154"
+    apiKey: "AIzaSyDR6fDpoz9dDBNWhq2-qD-VVem0iqUK4Lo",
+    authDomain: "music-3eefa.firebaseapp.com",
+    projectId: "music-3eefa",
+    storageBucket: "music-3eefa.firebasestorage.app",
+    messagingSenderId: "141235836647",
+    appId: "1:141235836647:web:7d0ee35eb005b9c743b442"
 };
 
 // Initialize Firebase

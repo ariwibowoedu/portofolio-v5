@@ -31,7 +31,7 @@
               @load="imgIsLoading = false"
               :src="project.urlToImage"
             />
-            <div class="p-6">
+            <div class="p-4">
               <h2 class="text-xl font-semibold text-primary mb-2">{{ project.title }}</h2>
               <p class="text-gray-600 mb-4 h-20 overflow-hidden line-clamp-2">
                 {{ project.description }}

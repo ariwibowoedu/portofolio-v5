@@ -2,16 +2,10 @@
 import LogoBrand from '@/components/partials/LogoBrand.vue'
 import { computed } from 'vue'
 import { useRouter } from 'vue-router'
-import * as feather from 'feather-icons'
+import FeatherIcon from '@/components/featherIcon/FeatherIcon.vue'
 
 const router = useRouter()
 const routes = computed(() => router.options.routes.filter((route) => route.name))
-
-const icons = {
-  github: feather.icons.github.toSvg(),
-  instagram: feather.icons.instagram.toSvg(),
-  mail: feather.icons.mail.toSvg(),
-}
 </script>
 
 <template>
@@ -45,7 +39,7 @@ const icons = {
                 aria-label="email"
                 class="hover:text-blueberry flex flex-row gap-2"
               >
-                <svg v-html="icons.mail" class="h-6 w-6"></svg>
+                <FeatherIcon classes="h-6 w-6" icon="mail" />
                 ariwibowo.edu@gmail.com</a
               >
             </li>
@@ -55,7 +49,8 @@ const icons = {
                 target="_blank"
                 aria-label="github"
                 class="hover:text-blueberry flex flex-row gap-2"
-                ><svg v-html="icons.github" class="h-6 w-6"></svg>
+              >
+                <FeatherIcon classes="h-6 w-6" icon="github" />
                 github.com/ariwibowoedu
               </a>
             </li>
@@ -66,7 +61,7 @@ const icons = {
                 aria-label="instagram"
                 class="hover:text-blueberry flex flex-row gap-2"
               >
-                <svg v-html="icons.instagram" class="h-6 w-6"></svg>
+                <FeatherIcon classes="h-6 w-6" icon="instagram" />
                 aariiwiiboowoo
               </a>
             </li>
