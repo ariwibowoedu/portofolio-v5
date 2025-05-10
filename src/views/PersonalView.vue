@@ -15,10 +15,15 @@
         </p>
         <div data-aos="zoom-in" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           <img
+            loading="lazy"
             src="/assets/img/lifting.jpeg"
             class="rounded-lg shadow-md object-cover w-full h-48"
           />
-          <img src="/assets/img/ari/1.jpg" class="rounded-lg shadow-md object-cover w-full h-48" />
+          <img
+            loading="lazy"
+            src="/assets/img/ari/1.jpg"
+            class="rounded-lg shadow-md object-cover w-full h-48"
+          />
         </div>
         <p class="text-sm text-gray-700 mt-2">
           Find more on
@@ -37,10 +42,15 @@
         </p>
         <div data-aos="zoom-in" class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
           <img
+            loading="lazy"
             src="/assets/img/traveling.jpeg"
             class="rounded-lg shadow-md object-cover w-full h-48"
           />
-          <img src="/assets/img/camp.jpg" class="rounded-lg shadow-md object-cover w-full h-48" />
+          <img
+            loading="lazy"
+            src="/assets/img/camp.jpg"
+            class="rounded-lg shadow-md object-cover w-full h-48"
+          />
         </div>
         <p class="text-sm text-gray-700 mt-2">
           Find more on

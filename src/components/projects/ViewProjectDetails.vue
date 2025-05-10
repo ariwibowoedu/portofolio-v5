@@ -22,7 +22,7 @@
       <div class="mt-10">
         <p class="text-xl font-normal text-gray-500">{{ project.description }}</p>
       </div>
-      <component :is="currentComponent" v-if="currentComponent"></component>
+      <component :is="currentComponent"></component>
     </div>
     <div v-else>Project not found. Please contact administrator.</div>
   </div>
@@ -31,17 +31,7 @@
 <script setup>
 import { computed } from 'vue'
 import QrGenerator from '@/components/projects/project/QrGenerator.vue'
-import ToDoList from '@/components/projects/project/ToDoList.vue'
-
-const componentMap = {
-  'generate qr code': QrGenerator,
-  'todo list': ToDoList,
-}
-
-const currentComponent = computed(() => {
-  const key = project.value?.title?.toLowerCase()
-  return key ? componentMap[key] : null
-})
+import OnGoing from '@/components/partials/OnGoing.vue'
 
 import { onMounted } from 'vue'
 import { useRoute } from 'vue-router'
@@ -49,6 +39,15 @@ import { useProjectsStore } from '@/stores/projectsStore'
 import { storeToRefs } from 'pinia'
 import LoaderDot from '@/components/partials/LoaderDot.vue'
 import dayjs from 'dayjs'
+
+const componentMap = {
+  'generate qr code': QrGenerator,
+}
+
+const currentComponent = computed(() => {
+  const key = project.value?.title?.toLowerCase()
+  return key && componentMap[key] ? componentMap[key] : OnGoing
+})
 
 const formatDate = (timestamp) => {
   if (!timestamp?.toDate) return 'invalid Date'

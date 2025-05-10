@@ -1,4 +1,8 @@
 <script setup>
+import { ref } from 'vue'
+
+const imgIsLoading = ref(true)
+
 const images = [
   'assets/img/ari/1.jpg',
   'assets/img/ari/2.jpg',
@@ -18,7 +22,15 @@ const images = [
     <h1 class="text-3xl mb-4 text-center">Gallery</h1>
     <div class="flex animate-slide gap-8 items-center">
       <div v-for="(image, index) in images" :key="index" class="flex-shrink-0 w-32 h-32 mx-4">
-        <img :src="image" :alt="`Image ${index + 1}`" class="w-full h-full object-cover rounded" />
+        <div v-if="imgIsLoading" class="absolute inset-0 bg-gray animate-pulse"></div>
+        <img
+          loading="lazy"
+          @load="imgIsLoading = false"
+          :src="image"
+          :alt="`Image ${index + 1}`"
+          class="w-full h-full object-cover rounded"
+          :class="{ 'opacity-0': imgIsLoading }"
+        />
       </div>
       <div
         v-for="(image, index) in images"
