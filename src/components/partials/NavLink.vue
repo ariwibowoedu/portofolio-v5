@@ -17,17 +17,15 @@
 </template>
     
     <script setup>
-import { computed, defineEmits } from "vue";
-import { useRouter } from "vue-router";
+import { computed } from 'vue'
+import { useRouter } from 'vue-router'
 
-const emit = defineEmits(["close"]);
+const emit = defineEmits(['close'])
 
-const router = useRouter();
-const routes = computed(() =>
-  router.options.routes.filter((route) => route.name)
-);
+const router = useRouter()
+const routes = computed(() => router.options.routes.filter((route) => route.name))
 
 const closeMenu = () => {
-  emit("close");
-};
+  emit('close')
+}
 </script>
