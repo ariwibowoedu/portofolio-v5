@@ -31,6 +31,7 @@
 <script setup>
 import { computed } from 'vue'
 import QrGenerator from '@/components/projects/project/QrGenerator.vue'
+import MoneyTracker from './project/MoneyTracker.vue'
 import OnGoing from '@/components/partials/OnGoing.vue'
 
 import { onMounted } from 'vue'
@@ -42,6 +43,7 @@ import dayjs from 'dayjs'
 
 const componentMap = {
   'generate qr code': QrGenerator,
+  'money tracker': MoneyTracker,
 }
 
 const currentComponent = computed(() => {
