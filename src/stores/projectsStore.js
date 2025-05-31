@@ -10,6 +10,7 @@ export const useProjectsStore = defineStore('projects', () => {
     const error = ref(null)
 
     const fetchProjects = async () => {
+
         loading.value = true
         try {
             const querySnapshot = await getDocs(collection(db, 'projects'))
@@ -23,7 +24,6 @@ export const useProjectsStore = defineStore('projects', () => {
 
     const fetchProjectById = async (id) => {
         loading.value = true
-        console.log("fetching project with id: ", id)
         try {
             const docRef = doc(db, 'projects', id)
             const docSnap = await getDoc(docRef)
