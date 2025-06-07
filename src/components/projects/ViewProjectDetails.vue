@@ -44,7 +44,7 @@ import dayjs from 'dayjs'
 
 const componentMap = {
   'generate qr code': QrGenerator,
-  'money tracker': MoneyTracker,
+  'budget plan': MoneyTracker,
   'simple calculator': SimpleCalculator,
 }
 
