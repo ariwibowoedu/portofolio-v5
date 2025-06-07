@@ -5,9 +5,9 @@
         Check this project on this link
         <a
           target="_blank"
-          href="https://ariwibowoedu.github.io/budgetin/"
+          href="https://ariwibowoedu.github.io/budget-plan/"
           class="text-primary hover:text-blueberry"
-          >https://ariwibowoedu.github.io/budgetin/</a
+          >https://ariwibowoedu.github.io/budget-plan/</a
         >
       </p>
     </div>
